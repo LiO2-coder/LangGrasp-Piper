@@ -4,4 +4,4 @@ config/TX-cloud_API.yaml
 __pycache__/
 *.py[cod]
 *$py.class
-temp/
+temp/*/*
