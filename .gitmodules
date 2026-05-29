@@ -1,6 +1,6 @@
 [submodule "src/NoPrint"]
 	path = src/NoPrint
-	url = https://github.com/LiO2-coder/NoPrint
+	url = https://github.com/LiO2-coder/NoPrint.git
 [submodule "third_party/anygrasp_sdk"]
 	path = third_party/anygrasp_sdk
 	url = https://github.com/graspnet/anygrasp_sdk.git
