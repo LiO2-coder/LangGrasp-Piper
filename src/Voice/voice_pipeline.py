@@ -11,7 +11,7 @@ from .online_recognize import TencentASRConfig, TencentASRRecognizer
 from .record import AudioRecorder, RecordingConfig
 
 
-MODULE_DIR = Path(__file__).resolve().parent
+MODULE_DIR = Path(__file__).resolve().parent.parent.parent
 DEFAULT_AUDIO_FILE = MODULE_DIR / "temp" / "voice" / "temp_audio.wav"
 DEFAULT_MODEL_PATH = MODULE_DIR / "model" / "vosk-model-small-cn-0.22"
 DEFAULT_CREDENTIALS_PATH = MODULE_DIR / "config" / "TX-cloud_API.yaml"
