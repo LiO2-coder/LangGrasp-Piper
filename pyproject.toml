@@ -24,7 +24,6 @@ dependencies = [
     "ultralytics>=8.2",
     "torch>=2.1",
     "tqdm>=4.66",
-    "graspnetAPI>=1.2.11",
 ]
 
 [project.optional-dependencies]

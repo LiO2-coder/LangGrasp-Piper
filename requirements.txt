@@ -16,7 +16,6 @@ ultralytics>=8.2
 # ../anygrasp_sdk/grasp_detection; these are its Python-side dependencies.
 torch>=2.1
 tqdm>=4.66
-graspnetAPI>=1.2.11
 
 # Voice input and recognition
 PyAudio>=0.2.14
