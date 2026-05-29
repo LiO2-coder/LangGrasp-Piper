@@ -1,0 +1,3 @@
+[submodule "src/NoPrint"]
+	path = src/NoPrint
+	url = https://github.com/LiO2-coder/NoPrint

@@ -1,0 +1,8 @@
+model/*.pt
+*.pt
+config/TX-cloud_API.yaml
+__pycache__/
+*.py[cod]
+*$py.class
+temp/
+src/Voice/temp/

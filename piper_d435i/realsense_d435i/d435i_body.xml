@@ -1,0 +1,23 @@
+<mujocoinclude>
+  <body name="d435i" childclass="d435i">
+    <geom mesh="d435i_0" material="IR_Lens" class="d435i_visual"/>
+    <geom mesh="d435i_1" material="IR_Emitter_Lens" class="d435i_visual"/>
+    <geom mesh="d435i_2" material="IR_Rim" class="d435i_visual"/>
+    <geom mesh="d435i_3" material="IR_Lens" class="d435i_visual"/>
+    <geom mesh="d435i_4" material="Cameras_Gray" class="d435i_visual"/>
+    <geom mesh="d435i_5" material="Black_Acrylic" class="d435i_visual"/>
+    <geom mesh="d435i_6" material="Black_Acrylic" class="d435i_visual"/>
+    <geom mesh="d435i_7" material="RGB_Pupil" class="d435i_visual"/>
+
+    <camera name="rgb_camera" mode="fixed" pos="0.0325 0 -0.0036" xyaxes="-1 0 0  0 1 0" fovy="42.5"/>
+
+    <camera name="depth_camera" mode="fixed" pos="0.0325 0 -0.0036" xyaxes="-1 0 0  0 1 0" fovy="58"/>
+    
+
+    <geom mesh="d435i_8" mass="0.072" material="Metal_Casing" class="d435i_visual"/>
+    <geom class="d435i_collision" type="capsule" mesh="d435i_8"/>
+    <site name="d435i_link_frame" type="sphere" pos="0 0 0" size="0.002" rgba="1 0 0 0"/>
+    <site name="d435i_rgb_frame" type="sphere" pos="0.0325 0 -0.0036" quat="-0.5 0.5 -0.5 0.5" size="0.0015" rgba="0 1 1 0"/>
+    <site name="d435i_depth_frame" type="sphere" pos="0.0325 0 -0.0036" quat="-0.5 0.5 -0.5 0.5" size="0.0015" rgba="1 1 0 0"/>
+  </body>
+</mujocoinclude>

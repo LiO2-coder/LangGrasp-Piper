@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mujoco-piper-yolo-sam"
+version = "0.1.0"
+description = "MuJoCo Piper grasping workflow with YOLO-World, FastSAM, AnyGrasp, and voice input."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Keep Learning" }
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "mujoco>=3.1",
+    "glfw>=2.6",
+    "opencv-python>=4.8",
+    "matplotlib>=3.7",
+    "open3d>=0.18",
+    "Pillow>=10.0",
+    "PyYAML>=6.0",
+    "ultralytics>=8.2",
+    "torch>=2.1",
+    "tqdm>=4.66",
+    "graspnetAPI>=1.2.11",
+]
+
+[project.optional-dependencies]
+voice = [
+    "PyAudio>=0.2.14",
+    "vosk>=0.3.45",
+    "tencentcloud-sdk-python-common>=3.0",
+    "tencentcloud-sdk-python-asr>=3.0",
+]
+ikpy = [
+    "ikpy>=3.3",
+]
+dev = [
+    "pytest>=8.0",
+]
+all = [
+    "PyAudio>=0.2.14",
+    "vosk>=0.3.45",
+    "tencentcloud-sdk-python-common>=3.0",
+    "tencentcloud-sdk-python-asr>=3.0",
+    "ikpy>=3.3",
+    "pytest>=8.0",
+]
+
+[project.scripts]
+mujoco-piper-yolo-sam = "main:main"
+mujoco-piper-yolo-sam-text = "main_wo_voice:main"
+
+[tool.setuptools]
+py-modules = ["main", "main_wo_voice"]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "src*",
+]
+namespaces = true
+
+[tool.setuptools.package-data]
+"*" = [
+    "config/*.json",
+    "config/*.yaml",
+    "model/*.pt",
+    "model/vosk-model-small-cn-0.22/**/*",
+    "model/vosk-model-small-en-us-0.15/**/*",
+    "piper_d435i/**/*.xml",
+    "piper_d435i/**/*.png",
+    "piper_d435i/**/*.obj",
+    "piper_d435i/**/*.stl",
+]

@@ -1,0 +1,28 @@
+# Core numerical and simulation stack
+numpy>=1.24
+scipy>=1.10
+mujoco>=3.1
+glfw>=2.6
+
+# Vision, plotting, and geometry
+opencv-python>=4.8
+matplotlib>=3.7
+open3d>=0.18
+Pillow>=10.0
+PyYAML>=6.0
+ultralytics>=8.2
+
+# AnyGrasp support. The local AnyGrasp SDK is expected at
+# ../anygrasp_sdk/grasp_detection; these are its Python-side dependencies.
+torch>=2.1
+tqdm>=4.66
+graspnetAPI>=1.2.11
+
+# Voice input and recognition
+PyAudio>=0.2.14
+vosk>=0.3.45
+tencentcloud-sdk-python-common>=3.0
+tencentcloud-sdk-python-asr>=3.0
+
+# Optional IK backend used when PiperIKController.solve(..., solver="ikpy") is selected.
+ikpy>=3.3
